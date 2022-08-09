@@ -1,27 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
+import Zoom from 'react-reveal/Zoom';
 
 function Section(props) {
   return (
     <div>
       <Warp bgImage={props.backgroundImg}>
-        <ItemText>
-          <h1>{props.title}</h1>
-          <p>{props.description}</p>
-        </ItemText>
+        <Zoom top>
+          <ItemText>
+            <h1>{props.title}</h1>
+            <p>{props.description}</p>
+          </ItemText>
+        </Zoom>
         <Button>
-          <ButtonGroup>
-            <LeftButton>
-              {props.leftBtnText}
-            </LeftButton>
-            {
-              props.rightBtnText &&
-              <RightButton>
-                {props.rightBtnText}
-              </RightButton>
-            }
+          <Zoom top>
 
-          </ButtonGroup>
+            <ButtonGroup>
+              <LeftButton>
+                {props.leftBtnText}
+              </LeftButton>
+              {
+                props.rightBtnText &&
+                <RightButton>
+                  {props.rightBtnText}
+                </RightButton>
+              }
+
+            </ButtonGroup>
+          </Zoom>
           <DownArrow src="/images/down-arrow.svg" />
         </Button>
       </Warp>
