@@ -22,9 +22,9 @@ export default function Header() {
         <CustomMenu />
       </RightMenu>
 
-    <BurgerNav>
-      <li><a href="#">Ex</a></li>
-    </BurgerNav>
+      <BurgerNav>
+        <li><a href="#">Ex</a></li>
+      </BurgerNav>
 
     </Container>
   )
@@ -74,5 +74,9 @@ const RightMenu = styled.div`
 
 const CustomMenu = styled(MenuIcon)`
   cursor: pointer;
+
+`
+
+const BurgerNav = styled.div`
 
 `
