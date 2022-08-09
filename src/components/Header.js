@@ -21,6 +21,11 @@ export default function Header() {
         <a href="#">Tesla Account</a>
         <CustomMenu />
       </RightMenu>
+
+    <BurgerNav>
+      <li><a href="#">Ex</a></li>
+    </BurgerNav>
+
     </Container>
   )
 }
